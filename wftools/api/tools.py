@@ -23,6 +23,11 @@ def weather():
     mainTools.weather()
 
 
+# 测试网速
+def net_speed_test():
+    mainTools.net_speed_test()
+
+
 # 通过url，获取ip地址
 # # @except_dec()
 def url2ip(url):
@@ -42,4 +47,4 @@ def create_article(theme, line_num=200):
 
 # @except_dec()
 def pwd4wifi(len_pwd=8, pwd_list=[]):
-    mainTools.pwd4wifi(len_pwd,pwd_list)
+    mainTools.pwd4wifi(len_pwd, pwd_list)
