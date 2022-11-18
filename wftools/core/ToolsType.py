@@ -6,7 +6,6 @@ import socket
 import time
 import speedtest  # 测速
 
-
 # from utils.tools.weather_city_code import WEATHER_CITY_CODE_DIC
 from wftools.lib.tools.lottery8ticket import ticket_kinds
 from wftools.lib.tools.pwd4wifi_service import pwd4wifi_service
@@ -44,8 +43,8 @@ class MainTools():
         @Desc  : 随机密码生成器，默认是8位
         @Return  ：
         """
-        chars = string.digits + string.ascii_letters
-        print(''.join(random.sample(chars * 10, len)))
+        chars = string.digits + string.ascii_letters + string.punctuation
+        print(''.join(random.sample(chars * len, len)))
 
     def weather(self):
         headers = {
@@ -94,8 +93,6 @@ class MainTools():
     def pwd4wifi(self, len_pwd, pwd_list):
         pwd4wifi_service(len_pwd, pwd_list)
 
-
-
     def net_speed_test(self):
         print("准备测试ing...")
         # 创建实例对象
@@ -112,5 +109,3 @@ class MainTools():
         # 输出结果
         print("下载速度：" + str(download_speed) + " Mbits/s")
         print("上传速度：" + str(upload_speed) + " Mbits/s")
-
-
