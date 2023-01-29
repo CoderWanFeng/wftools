@@ -15,7 +15,7 @@ def qrcodetools(url):
 
 # @except_dec()
 def passwordtools(len=8):
-    mainTools.passwordtools(len)
+    return mainTools.passwordtools(len)
 
 
 # @except_dec()

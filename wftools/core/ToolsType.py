@@ -44,7 +44,9 @@ class MainTools():
         @Return  ：
         """
         chars = string.digits + string.ascii_letters + string.punctuation
-        print(''.join(random.sample(chars * len, len)))
+        pwd = ''.join(random.sample(chars * len, len))
+        print(pwd)
+        return pwd
 
     def weather(self):
         headers = {
