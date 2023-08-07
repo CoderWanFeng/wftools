@@ -8,7 +8,7 @@ import speedtest  # 测速
 
 # from utils.tools.weather_city_code import WEATHER_CITY_CODE_DIC
 from wftools.lib.tools.lottery8ticket import ticket_kinds
-from wftools.lib.tools.pwd4wifi_service import pwd4wifi_service
+# from wftools.lib.tools.pwd4wifi_service import pwd4wifi_service
 from wftools.lib.tools.qoute_dict_create_article import create_article_main
 from wftools.lib.tools.weather_city_code import WEATHER_CITY_CODE_DIC
 from wftools.lib.tools.weather_service import weather_spider
@@ -83,7 +83,7 @@ class MainTools():
                 break
             print('*' * 20)
             if not ticket_kinds.get(kind)[1]():
-                print('这个规则太复杂了，我们正在开发。如果可以提供建议，请私信：http://t.cn/A6XVQXAk')
+                print('这个规则太复杂了，我们正在开发。如果可以提供建议，请私信：http://python4office.cn/wechat-qrcode')
             else:
                 print(f'{ticket_kinds.get(kind)[0]}的号码是 -->> {ticket_kinds.get(kind)[1]()}')
             print('*' * 20)
@@ -93,7 +93,8 @@ class MainTools():
 
     # 破解wifi密码
     def pwd4wifi(self, len_pwd, pwd_list):
-        pwd4wifi_service(len_pwd, pwd_list)
+        '该方法已废弃，如有疑问，请联系：http://www.python4office.cn/wechat-group/'
+        # pwd4wifi_service(len_pwd, pwd_list)
 
     def net_speed_test(self):
         print("准备测试ing...")

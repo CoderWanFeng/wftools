@@ -1,7 +1,7 @@
 
-<p align="center">
-    <a target="_blank" href='https://url.cn/Z4lzPLaF'>
-    <img src="https://website-python-1300615378.cos.ap-nanjing.myqcloud.com/ads%2F1040x100-tencent.jpg" width="100%"/>
+<p align="center" id='大礼包-banner'>
+    <a target="_blank" href='http://python4office.cn/fuli/fuli-source-0726/'>
+    <img src="https://banner-1300615378.cos.ap-guangzhou.myqcloud.com/%E6%A8%AA%E6%9D%A1/Python%E5%A4%A7%E7%A4%BC%E5%8C%85.jpg" width="100%"/>
     </a>   
 </p>
 
@@ -22,10 +22,10 @@
     	<a target="_blank" href='https://gitee.com/CoderWanFeng/python-office'>
 		<img src='https://gitee.com/CoderWanFeng//python-office/badge/star.svg?theme=dark' alt='gitee star'/>
 	</a>
-  	<a href="https://mp.weixin.qq.com/s/Jf_EVdKlVnHhK68fW5OA6A">
-	<img src="https://img.shields.io/badge/QQ-1090738447-orange"/>
+  	<a href="https://mp.weixin.qq.com/s/yaSmFKO3RrBpyanW3nvRAQ">
+	<img src="https://img.shields.io/badge/QQ-163434413-orange"/>
   </a>
-    	<a href="https://mp.weixin.qq.com/s/wx-JkgOUoJhb-7ZESxl93w">
+    	<a href="https://mp.weixin.qq.com/s/NN2pX2bQPpczOeGF4ARNtw">
 	<img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E4%BA%A4%E6%B5%81%E7%BE%A4-brightgreen"/>
   </a>
 </p>
@@ -46,7 +46,7 @@ wftools是python自动化办公的小工具的代码合集。
 ### 🍊pip 自动下载&更新
 
 ```
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple wftools -U
+pip install -i https://mirrors.aliyun.com/pypi/simple/ wftools -U
 ```
 
 
@@ -54,15 +54,17 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple wftools -U
 
 ## 📝功能
 
-[📘官网：https://www.python-office.com/](https://www.python-office.com/)
-
-| 序号 | 项目介绍       | 代码地址 |
-| ---- | -------------- | -------- |
-| 1    | [合同和财务系统](https://mp.weixin.qq.com/s/7Cx9f1Re9tbJVajtNVmsVA) | [源码](https://github.com/CoderWanFeng/awesome-python-framework/tree/project/1%E3%80%81%E5%90%88%E5%90%8C%E7%B3%BB%E7%BB%9F)     |
-| 2    | [人脸门禁系统](https://mp.weixin.qq.com/s/98X3nl-elyi7MYsU_uCeqA) | [源码](https://github.com/CoderWanFeng/awesome-python-framework/tree/project/2%E3%80%81Python%2BDjango%E5%AE%9E%E7%8E%B0%E5%9F%BA%E4%BA%8E%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E7%9A%84%E9%97%A8%E7%A6%81%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E3%80%90%E6%BA%90%E7%A0%81%E3%80%91)     |
-| 3    | [商场管理系统](https://mp.weixin.qq.com/s/0FR4o2ddPe-9C2ijlnTuAg) | [源码](https://github.com/CoderWanFeng/awesome-python-framework/tree/project/3、用Python实现一个商场管理系统(附源码))     |
-| 4    | [报表自动化 + 邮件自动发送](https://mp.weixin.qq.com/s/RfG502Hez7UttfHMndc4eA) | [源码](https://github.com/CoderWanFeng/awesome-python-framework/tree/project/4%E3%80%81Python%E8%87%AA%E5%8A%A8%E5%8C%96%E5%8A%9E%E5%85%AC%E5%B0%8F%E7%A8%8B%E5%BA%8F%EF%BC%9A%E5%AE%9E%E7%8E%B0%E6%8A%A5%E8%A1%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E5%92%8C%E8%87%AA%E5%8A%A8%E5%8F%91%E9%80%81%E5%88%B0%E7%9B%AE%E7%9A%84%E9%82%AE%E7%AE%B1)     |
-| 5    | 爬取招聘网站 | [源码](https://github.com/CoderWanFeng/awesome-python-framework/tree/project/5、Python招聘岗位信息聚合系统（拥有爬虫爬取、数据分析、可视化、互动等功能）)     |
+| 序号 | 方法名         | 功能               | 视频（文档）                                          | 演示代码                                                  |
+| ---- | -------------- | ------------------ | ----------------------------------------------------- | --------------------------------------------------------- |
+| 1    | transtools     | 翻译万国语言       | ⭐[视频](https://www.bilibili.com/video/BV1Y3411R7q7/) | [源码](https://mp.weixin.qq.com/s/agsF8ttwxOiZyizsTKBxMQ) |
+| 2    | qrcodetools    | 解析二维码图片信息 | ⭐[视频](https://www.bilibili.com/video/BV133411d7XF)  | [源码](https://mp.weixin.qq.com/s/4PNhYZ1k2au5XoZOBdUM6A) |
+| 3    | passwordtools  | 密码生成器         | ⭐[视频](https://www.bilibili.com/video/BV1QY4y1o7qc)  | [源码](https://mp.weixin.qq.com/s/QQ1cepAISH0PKWfc5v6G6w) |
+| 4    | weather        | 天气查询           |                                                       | [源码](https://mp.weixin.qq.com/s/owXyC5DjbOwrcHpTGjMbJA) |
+| 5    | net_speed_test | 测网速             |                                                       | [源码](https://mp.weixin.qq.com/s/owXyC5DjbOwrcHpTGjMbJA) |
+| 6    | url2ip         | 获取ip地址         |                                                       | [源码](https://mp.weixin.qq.com/s/owXyC5DjbOwrcHpTGjMbJA) |
+| 7    | lottery8ticket | 生成彩票号码       | ⭐[视频](https://www.bilibili.com/video/BV1QY4y1o7qc)  | [源码](https://mp.weixin.qq.com/s/QQ1cepAISH0PKWfc5v6G6w) |
+| 8    | create_article | 自动写文章         | ⭐[视频](https://www.bilibili.com/video/BV1QY4y1o7qc)  | [源码](https://mp.weixin.qq.com/s/QQ1cepAISH0PKWfc5v6G6w) |
+| 9    | pwd4wifi       | 破解wifi密码       | ⭐[视频](https://www.bilibili.com/video/BV1QY4y1o7qc)  | [源码](https://mp.weixin.qq.com/s/QQ1cepAISH0PKWfc5v6G6w) |
 
 
 
@@ -112,4 +114,8 @@ python-office欢迎任何人来添砖加瓦，贡献代码，建议提交的pr�
 ## 📌联系作者
 
 
-![CoderWanFeng](https://python-office-1300615378.cos.ap-chongqing.myqcloud.com/python-office-qr.jpg)
+<p align="center" id='开源交流群-banner'>
+<a target="_blank" href='https://python-office-1300615378.cos.ap-chongqing.myqcloud.com/python-office.jpg'>
+<img src="https://python-office-1300615378.cos.ap-chongqing.myqcloud.com/python-office-qr.jpg" width="100%"/>
+</a> 
+</p>
