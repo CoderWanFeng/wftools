@@ -4,13 +4,13 @@ mainTools = MainTools()
 
 
 # @except_dec()
-def transtools(to_lang, content):
-    mainTools.transtools(to_lang, content)
+def transtools(content, to_lang, from_lang):
+    return mainTools.transtools(to_lang=to_lang, from_lang=from_lang, content=content)
 
 
 # @except_dec()
-def qrcodetools(url):
-    mainTools.qrcodetools(url)
+def qrcodetools(url: str, output: str = r'./qrcode_img.png'):
+    mainTools.qrcodetools(url, output)
 
 
 # @except_dec()
@@ -31,7 +31,7 @@ def net_speed_test():
 # 通过url，获取ip地址
 # # @except_dec()
 def url2ip(url):
-    mainTools.url2ip(url)
+    return mainTools.url2ip(url)
 
 
 # 通过url，获取ip地址
@@ -48,3 +48,4 @@ def create_article(theme, line_num=200):
 # @except_dec()
 def pwd4wifi(len_pwd=8, pwd_list=[]):
     mainTools.pwd4wifi(len_pwd, pwd_list)
+

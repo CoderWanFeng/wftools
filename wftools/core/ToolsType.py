@@ -1,10 +1,12 @@
-from translate import Translator
-import qrcode
-import string
 import random
 import socket
-import time
+import string
+from pathlib import Path
+
+import qrcode
 import speedtest  # 测速
+from pofile import mkdir
+from translate import Translator
 
 # from utils.tools.weather_city_code import WEATHER_CITY_CODE_DIC
 from wftools.lib.tools.lottery8ticket import ticket_kinds
@@ -16,15 +18,15 @@ from wftools.lib.tools.weather_service import weather_spider
 
 class MainTools():
 
-    def transtools(self, to_lang, content):
+    def transtools(self, content, to_lang, from_lang='zh'):
         # specifying the language
-        translator = Translator(to_lang)
+        translator = Translator(to_lang,from_lang)
         # typing the message
         translation = translator.translate(content)
         # print the translated message
-        print(translation)
+        return  translation
 
-    def qrcodetools(self, url):
+    def qrcodetools(self, url: str, output: str = r'./qrcode_img.png'):
         # Creating object
         # version: defines size of image from integer(1 to 40), box_size = size of each box in pixels, border = thickness of the border.
         qr = qrcode.QRCode(version=1, box_size=10, border=5)
@@ -34,8 +36,10 @@ class MainTools():
         qr.make(fit=True)
         # specify the foreground and background color for the img
         img = qr.make_image(fill='black', back_color='white')
+        output_abs_path = Path(output).absolute()
+        mkdir(output_abs_path.parent)
         # store the image
-        img.save('qrcode_img.png')
+        img.save(output_abs_path)
 
     def passwordtools(self, len):
         """
@@ -45,7 +49,6 @@ class MainTools():
         """
         chars = string.digits + string.ascii_letters + string.punctuation
         pwd = ''.join(random.sample(chars * len, len))
-        print(pwd)
         return pwd
 
     def weather(self):
@@ -64,10 +67,10 @@ class MainTools():
                 print('未查到%s城市，请重新输入：' % cityName)
 
     # 通过url，获取ip地址
-    def url2ip(self, url):
+    def url2ip(self, url) -> str:
         socket_list = socket.getaddrinfo(url, None, 0, socket.SOCK_STREAM)
         ip_info = socket_list[0][4][0]
-        print('【{}】 这个网址对应的IP地址是：{}'.format(url, ip_info))
+        return str(ip_info)
 
     def lottery8ticket(self):
         '''
