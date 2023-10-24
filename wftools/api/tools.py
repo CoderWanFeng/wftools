@@ -49,3 +49,6 @@ def create_article(theme, line_num=200):
 def pwd4wifi(len_pwd=8, pwd_list=[]):
     mainTools.pwd4wifi(len_pwd, pwd_list)
 
+
+def open_soft(soft_path, num):
+    mainTools.open_soft(soft_path, num)

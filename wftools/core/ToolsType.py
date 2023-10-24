@@ -1,6 +1,7 @@
 import random
 import socket
 import string
+import subprocess
 from pathlib import Path
 
 import qrcode
@@ -20,11 +21,11 @@ class MainTools():
 
     def transtools(self, content, to_lang, from_lang='zh'):
         # specifying the language
-        translator = Translator(to_lang,from_lang)
+        translator = Translator(to_lang, from_lang)
         # typing the message
         translation = translator.translate(content)
         # print the translated message
-        return  translation
+        return translation
 
     def qrcodetools(self, url: str, output: str = r'./qrcode_img.png'):
         # Creating object
@@ -115,3 +116,10 @@ class MainTools():
         # 输出结果
         print("下载速度：" + str(download_speed) + " Mbits/s")
         print("上传速度：" + str(upload_speed) + " Mbits/s")
+
+    def open_soft(self, soft_path, num):
+        # 软件路径
+        software_path = Path(soft_path).absolute()
+        # 打开软件
+        for i in range(num):
+            subprocess.Popen(software_path)
